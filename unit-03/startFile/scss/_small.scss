@@ -18,14 +18,20 @@ body {
 
 /*----------- HEADER --------------*/
 header {
-    padding: .5rem 2%;
     
+    padding: .5rem 2%;
     display: grid;
     grid-template-columns: 130px auto;
 }
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
-main h1 {margin-left: 2%}
+header h1 {margin: 0;
+font-size: 1.2rem; margin-top: .5rem;}
+
+header h2 {margin: 0; font-weight: normal;
+    font-size: 1rem;
+}
+
+
+
 
 /*----------- NAVIGATION --------------*/
 
@@ -70,7 +76,7 @@ div.gallery {
 }
 
 div.gallery figure {
-    flex-basis: 100%;
+    flex-basis: 46%;
     margin: 1rem 2%;
 }
 
@@ -81,6 +87,10 @@ div.gallery figure img {
 .gallery {
     text-align: center;
 }
+
+main h1 { font-size: 2rem;
+    margin-left: 2%}
+
 /*----------- FOOTER --------------*/
 
 footer {
@@ -100,3 +110,8 @@ footer p {
   clear: both;
 }
 
+@media only screen and (max-width: 560px) {
+    .hide {
+        display: none;
+    }
+}

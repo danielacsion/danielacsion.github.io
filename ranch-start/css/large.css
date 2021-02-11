@@ -1,0 +1,23 @@
+@media only screen and (min-width: 1028px) {
+
+nav, header, footer, main {max-width: 75rem; margin:auto;} /*Same aas 1200px. This sets the max width of the pg, margin auto centers it.*/
+
+nav ul {padding-left: 2%;} /* this will match the header padding so there will be alignment */
+
+nav li {
+    width: auto;
+} /* items go left but are all squished. So let's add padding. */
+
+nav a { padding: .5rem 1rem;}
+
+main figure {
+    
+    width: 31% /* 33%, counting the 2% margin added in. The float and margin-left are carried over from the medium file, no need to repeat them here. */
+}
+
+div.news {
+    column-count: 3; /* clear and column rule carry over from the medium file */
+}
+
+
+} /* End of media query. The rules will not work until the screen is wider than 560px */
