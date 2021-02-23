@@ -5,10 +5,13 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
+
+
+
 /*----------- BODY --------------*/
 body {
+    font-family: 'Quicksand', sans-serif;
     font-size: 16px;
-    font-family: Verdana, sans-serif;
 }
 
 
@@ -22,7 +25,6 @@ header {
     background-color: #d3d3d3;
     }
 header h1 {
-font-size: ;
 margin: 0;
 color: white;
 font-size: 1.5rem;}
@@ -71,6 +73,9 @@ nav ul li.active a {
 }
 /*----------- MAIN --------------*/
 main {
+    h1 {
+        font-size: 1.5rem;
+    }
     padding: 0 2%;
     min-height: 10rem;
 
@@ -117,6 +122,10 @@ main {
             border-radius: $cbr;
         }
         a:hover{background-color: lighten(crimson, 10%); }
+
+        a{
+           text-decoration:  none;
+        }
         
 
     }// end of card
