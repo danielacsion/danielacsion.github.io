@@ -1,0 +1,40 @@
+ header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+}
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+header {
+        background-image: url(../images/large-header-image.jpg);
+        height: 192px;
+        padding: .5rem 2%;   
+        background-size: cover;
+        background-position: center;
+    }
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+
+main {
+    .card-deck {
+        display: flex;
+    }
+    
+  .card{
+        flex-basis: 31.333%;
+    }
+}
+
+/*----------- FOOTER --------------*/
+    

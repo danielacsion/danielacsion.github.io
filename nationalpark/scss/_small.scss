@@ -1,0 +1,141 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    background-image: url(../images/small-header.jpg);
+    height: 72px;
+    padding: .5rem 2%;   
+}
+.header-wrapper {
+    background-color: #d3d3d3;
+    }
+header h1 {
+font-size: ;
+margin: 0;
+color: white;
+font-size: 1.5rem;}
+header h2 {margin: 0; font-weight: normal;
+color: white;
+font-size: 1rem;}
+.tag {text-align: right;
+    margin-bottom: 15px;
+}
+
+/*----------- NAVIGATION --------------*/
+.nav-wrapper {
+    background-color: #666;
+}
+nav {
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+    width: 25%;
+}
+nav ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: #eee;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+
+    $cbr: 10px;
+    .card-deck {
+    display: flex;
+    flex-wrap: wrap;} 
+    .card {
+        flex-basis: 100%;
+        border: 1px solid #999;
+        border-radius: $cbr;
+        margin: 1rem 1%; //since we added 1% margin this will mess with our math/columns. We need to subract 2 % from each flex-basis so the columns are aligned correctly.
+        text-align: center;
+        section {
+            background-color: #444;
+            color: #eee;
+            padding: 1rem 0;
+            border-top-left-radius: $cbr - 1;
+            border-top-right-radius: $cbr - 1;
+        }// end of section
+        img {
+            position: relative;
+            padding: 1rem;
+        }//end of image
+
+       img:hover {
+            animation: bounce 1s 2;
+        }
+        @keyframes bounce {
+            0% {bottom: 0px;}
+            50% {bottom: 15px;}
+            100% {bottom: 0px;}
+        }
+
+        p {
+            padding: 1rem 2vw;
+        }
+        a {
+          display: block;
+          background-color: crimson;
+          color: #fff;
+            padding: 1rem 0;
+            margin: 1rem 4vw;
+            border-radius: $cbr;
+        }
+        a:hover{background-color: lighten(crimson, 10%); }
+        
+
+    }// end of card
+
+} //end of main
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
